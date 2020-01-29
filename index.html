@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Личный проект: Седона</title>
-    <link rel="">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header>
@@ -21,10 +21,11 @@
   	</header>
 
   	<main>
-  		<section><!--Если честно, зпутался с этой секцией напрочь. Не понимаю что из этого заголовок, а что параграф, а может это вообще все картинка. В общем помоги %)-->
-  			<h1> sedona</h1> <!--Почему первый заголовок отображается в браузере меньше чем второй? нипанятна... -->
-  			<p>welcome to the gorgeous</p>
-  			<p>"Because the Grand Canyon sucks!"</p>
+  		<section>
+  			<h1>Sedona</h1> <!--Почему первый заголовок отображается в браузере меньше чем второй? нипанятна... -->
+  			<img src="img/background-photo.jpg" width="1200" height="800" alt="Подложка приветствия">
+  			<img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
+  			<img src="img/intro-mask.svg" width="1203" height="59"> <!--Нужен ли здесь атрибут alt? -->
   	  </section>
   	  <section>
   	    <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -33,13 +34,13 @@
  		 	<section>
  	 		<!--То что пока не надо размечать
  	 		 Лиза, я думаю что это будет список из отдельных секций
- 	 			-Настоящий городок 
+ 	 			-Настоящий городок
  	 			-Мост дьявола
  	 			-Небольшая площадь
  	 			-Красивая дорога
  	 			-Мало туристов
 
- 	 			Ну и внутри первой секции про то, что это настоящий городок, будет свой список из дивов: жилье ,еда, сувениры. 
+ 	 			Ну и внутри первой секции про то, что это настоящий городок, будет свой список из дивов: жилье ,еда, сувениры.
 
  	 			P.S. Если конечно можно кладывать секшн в ли 8)
  	 			P.P.S. посмотрел в спецификации, вроде можно...
@@ -49,7 +50,7 @@
   			<h2>Заинтересовались?</h2>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
   			<form>
-  				
+
   			</form>
   		</section>
   	</main>
@@ -58,17 +59,31 @@
   		<p>
   			<span>#visitSEDONA</span>
         <span>Тел: +7(495) 666-02-66</span>
-  		</p> 
+  		</p>
   		<div>
-  			<ul>
-  				<li><a href="#">Twitter</a></li>
-  				<li><a href="#">Faceboock</a></li>
-  				<li><a href="#">Youtube</a></li>
-  			</ul>
-  		</div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/twitter.svg" width="17" height="15" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/youtube.svg" width="20" height="16" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
   		<p>
   			website by
-  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmla-logo.png"></a>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип HTML-Academy">
+        </a>
   		</p>
   	</footer>
   </body>
