@@ -22,26 +22,81 @@
 
   	<main>
   		<section>
-  			<h1>Sedona</h1> 
-  			<img src="img/background-photo.jpg" width="1200" height="800" alt="Подложка приветствия">
-  			<img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
-  			<img src="img/intro-mask.svg" width="1203" height="59" alt="Нижняя маска фона"> 
+  			<h1 class="visually-hidden">Sedona</h1> 
+  			<img src="img/background-photo.jpg" width="1200" height="800" alt="">
+  			<img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona">
+  			<img src="img/intro-mask.svg" width="1203" height="59" alt=""> 
   	  </section>
   	  <section>
   	    <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
   	    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
  	 		</section>
+
  		 	<section>
- 	 		<!--То что пока не надо размечать
- 	 		 
- 	 		-->
+ 	 		<ol>
+ 	 			<li> 	 				
+ 	 				<h2>Настоящий городок</h2>
+ 	 				<span>-№1-</span>
+ 	 				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p> 	 				
+ 	 				<img src="img/feature-picture.jpg" width="800" height="256" alt=""> 	 	
+ 	 				<ul>
+ 	 					<li>
+ 	 						<h3>Жилье</h3>
+ 	 						<img src="img/icon-1.svg" width="75" height="72" alt="">
+ 	 						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+ 	 					</li>
+ 	 					<li>
+ 	 						<h3>Еда</h3>
+ 	 						<img src="img/icon-3.svg" width="75" height="72" alt="">
+ 	 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 	 						
+ 	 					</li>
+ 	 					<li>
+ 	 						<h3>Сувениры</h3>
+ 	 						<img src="img/icon-2.svg" width="75" height="72" alt="">
+ 	 						<p>Не только китайского, но и местного производства!</p> 	 						
+ 	 					</li>
+ 	 				</ul>			
+ 	 			</li>
+ 	 			<li>
+ 	 				<img src="img/layer-5.jpg" width="800" height="256" alt="">
+ 	 				<h2>Там есть мост Дьявола</h2>
+ 	 				<span>-№2-</span>
+ 	 				<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p> 	 				
+ 	 			</li>
+ 	 			<li>
+ 	 				<h3>Небольшая площадь</h3>
+ 	 				<span>-№3-</span>
+ 	 				<p>Все достопремечательности находятся очень близко</p>
+ 	 			</li>
+ 	 			<li>
+ 	 				<h3>Красивая дорога</h3>
+ 	 				<span>-№4-</span>
+ 	 				<p>Ехать из Лас-Вегаса совсем не скучно!</p>
+ 	 			</li>
+ 	 			<li>
+ 	 				<h3>Мало туристов</h3>
+ 	 				<span>-№5-</span>
+ 	 				<p>Большинство едет в Гранд Каньон и толпится там</p>
+ 	 			</li>
+ 	 		</ol>
   		</section>
+
   		<section>
   			<h2>Заинтересовались?</h2>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
   			<form>
-
+  				<h3>Поиск гостиницы в Седоне</h3>
+  				<label for="check-in">Дата заезда</label>
+  				<input type="date" name="check-in-date" id="check-in">
+  				<label for="check-out">Дата выезда</label>
+  				<input type="date" name="check-out-date" id="check-out">
+  				<label for="adults">Взрослые</label>
+  				<input type="number" name="number-of-adults" id="adults">
+  				<label for="children">Дети</label>
+  				<input type="number" name="number-of-children" id="children">
+  				<a href="#">Найти</a>
   			</form>
+  			<img src="img/map.png" width="1200" height="593" atl="Расположение города Седона на карте">
   		</section>
   	</main>
 

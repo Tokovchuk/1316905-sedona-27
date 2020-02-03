@@ -21,9 +21,46 @@
     </header>
 
     <main>
-      <h1>Гостиницы</h1>
+      <h1 class="visually-hidden">Гостиницы</h1>
       <section>
-       <!--форма для поиска гостиницы -->
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2> 
+        <form>
+          <h3>Инфраструктура</h3>
+          <ul>
+            <li>
+              <input type="checkbox" name="infrasrtucrure-pool" id="pool">
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="infrastructure-parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+          <h3>Тип жилья</h3>
+          <ul>
+            <li>
+             <input type="checkbox" name="type-hotel" id="hotel">
+             <label for="hotel">Гостиница</label>
+           </li>
+           <li>
+             <input type="checkbox" name="type-motel" id="motel">
+             <label for="motel">Мотель</label>
+           </li>
+           <li>
+             <input type="checkbox" name="type-apart" id="apart">
+             <label for="apart">Апартаменты</label>
+           </li>
+          </ul>
+          <h3>Стоимость в сутки(р):</h3>
+          <p>
+            от 0  до 3000
+          </p>
+          <button type="submit">Найти</button>
+        </form>        
       </section>
       <section>
       <ul>
