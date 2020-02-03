@@ -1,4 +1,6 @@
-
+body{
+  background: gold;
+}
 
  .visually-hidden{
  position: absolute;
@@ -15,5 +17,4 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
 

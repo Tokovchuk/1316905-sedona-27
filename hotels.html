@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Личный проект: Седона</title>
-    <link rel="">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -23,8 +23,8 @@
     <main>
       <h1 class="visually-hidden">Гостиницы</h1>
       <section>
-        <h2 class="visually-hidden">Форма поиска гостиницы</h2> 
-        <form>
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+        <form method="post" action="https://www.echo.htmlacademy.ru">
           <h3>Инфраструктура</h3>
           <ul>
             <li>
@@ -59,8 +59,18 @@
           <p>
             от 0  до 3000
           </p>
-          <button type="submit">Найти</button>
-        </form>        
+          <input type="range" name="cost-range" min="0" max="3000">
+          <button type="submit">Показать</button>
+          <h3>Найдено: 3</h3>
+          <h4>Сортировка</h4>
+          <ul>
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по рейтингу</li>
+          </ul>
+          <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+          <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+        </form>
       </section>
       <section>
       <ul>
