@@ -25,58 +25,85 @@
       <section>
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <form method="post" action="https://www.echo.htmlacademy.ru">
-          <h3>Инфраструктура</h3>
-          <ul>
-            <li>
-              <input type="checkbox" name="infrasrtucrure-pool" id="pool">
-              <label for="pool">Бассейн</label>
-            </li>
-            <li>
-              <input type="checkbox" name="infrastructure-parking" id="parking">
-              <label for="parking">Парковка</label>
-            </li>
-            <li>
-              <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi">
-              <label for="wi-fi">Wi-Fi</label>
-            </li>
-          </ul>
-          <h3>Тип жилья</h3>
-          <ul>
-            <li>
-             <input type="checkbox" name="type-hotel" id="hotel">
-             <label for="hotel">Гостиница</label>
-           </li>
-           <li>
-             <input type="checkbox" name="type-motel" id="motel">
-             <label for="motel">Мотель</label>
-           </li>
-           <li>
-             <input type="checkbox" name="type-apart" id="apart">
-             <label for="apart">Апартаменты</label>
-           </li>
-          </ul>
-          <h3>Стоимость в сутки(р):</h3>
-          <p>
-            от 0  до 3000
-          </p>
-          <input type="range" name="cost-range" min="0" max="3000">
-          <button type="submit">Показать</button>
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="infrasrtucrure-pool" id="pool">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="infrastructure-parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+               <input type="checkbox" name="type-hotel" id="hotel">
+               <label for="hotel">Гостиница</label>
+             </li>
+             <li>
+               <input type="checkbox" name="type-motel" id="motel">
+               <label for="motel">Мотель</label>
+             </li>
+             <li>
+               <input type="checkbox" name="type-apart" id="apart">
+               <label for="apart">Апартаменты</label>
+             </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(р):</legend>
+            <div>
+              <label for="min">от</label>
+              <input type="number" name="cost-min" id="min" min="0" placeholder="0">
+              <label for="max">до</label>
+              <input type="number" name="cost-max" id="max" placeholder="3000">
+            </div>
+            <div>
+              <button type="button"></button>
+              <div><hr width="170"></div>
+              <button type="button"></button>
+            </div>
+            <button type="submit">Показать</button>
+          </fieldset>
+        </form>
+        <div>
           <h3>Найдено: 3</h3>
           <h4>Сортировка</h4>
           <ul>
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по рейтингу</li>
+            <li>
+              <a href="#">по цене</a>
+            </li>
+            <li>
+              <a href="#">по типу</a>
+            </li>
+            <li>
+              <a href="#">по рейтингу</a>
+            </li>
           </ul>
-          <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
-          <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
-        </form>
+        </div>
+        <div>
+          <button type="button">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+          </button>
+          <button type="button">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+          </button>
+        </div>
       </section>
       <section>
       <ul>
         <li>
           <h2>Amara Resort & Spa</h2>
-          <img src="img/amara.jpg" width="135" height="90" alt="amara resort & spa">
+          <img src="img/amara.jpg" width="135" height="90" alt="Отель 'Amara resort & spa'">
           <span>Гостиница</span>
           <span>от 4000 р.</span>
           <ul>
@@ -91,7 +118,7 @@
         </li>
         <li>
           <h2>Desert Quail Inn</h2>
-          <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
+          <img src="img/desert.jpg" width="135" height="90" alt="Отель 'Desert quail inn'">
           <span>Мотель</span>
           <span>от 3000 р.</span>
           <ul>
@@ -105,7 +132,7 @@
         </li>
         <li>
           <h2>Villas at Poco Diablo</h2>
-          <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          <img src="img/villas.jpg" width="135" height="90" alt="Отель 'Villas at Poco Diablo'">
           <span>Аппартаменты</span>
           <span>от 2000 р.</span>
           <ul>
@@ -122,8 +149,8 @@
 
     <footer>
       <p>
-        <span>#visitSEDONA</span>
-        <span>Тел: +7(495) 666-02-66</span>
+        <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitSEDONA</a>
+        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       </p>
       <div>
         <ul>
