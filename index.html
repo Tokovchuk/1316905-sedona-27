@@ -3,41 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Личный проект: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header>
-  		<nav>
-  			<a href="#">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo" href="#">
   				<img src="img/logo.png" width="140" height="71" alt="Логотип">
   			</a>
-  			<ul>
-  				<li><a href="#">Информация</a></li>
-  				<li><a href="#">Фото и видео</a></li>
-  				<li><a href="#">Карта штата</a></li>
+  			<ul class="site-navigation">
+  				<li><a href="info.html">Информация</a></li>
+  				<li><a href="media.html">Фото и видео</a></li>
+  				<li><a href="mapstate.html">Карта штата</a></li>
   				<li><a href="hotels.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
 
   	<main>
-  		<section>
+
+  		<section class="intro-img">
   			<h1 class="visually-hidden">Sedona</h1>
   	  </section>
-  	  <section>
+
+  	  <section class="reasons-title">
   	    <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
   	    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
  	 		</section>
 
- 		 	<section>
- 	 		<ol>
+ 		 	<section class="reasons">
+ 	 		<ol class="resons-list">
  	 			<li>
-          <div>
+          <div class="reasons-item">
  	 				 <h2>Настоящий городок</h2>
  	 				 <span>-№1-</span>
  	 				 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
- 	 				 <img src="img/feature-picture.jpg" width="800" height="256" alt="">
           </div>
+ 	 				<img src="img/feature-picture.jpg" width="800" height="256" alt="">
  	 				<ul>
  	 					<li>
  	 						<h3>Жилье</h3>
@@ -58,7 +62,7 @@
  	 			</li>
  	 			<li>
  	 				<img src="img/layer-5.jpg" width="800" height="256" alt="">
-          <div>
+          <div class="reasons-item">
  	 				 <h2>Там есть мост Дьявола</h2>
  	 				 <span>-№2-</span>
  	 				 <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
@@ -127,17 +131,17 @@
   		<div>
         <ul>
           <li>
-            <a href="#">
+            <a href="twitter.com">
               <img src="img/twitter.svg" width="17" height="15" alt="twitter">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="fb.com">
               <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="youtube.com">
               <img src="img/youtube.svg" width="20" height="16" alt="youtube">
             </a>
           </li>
