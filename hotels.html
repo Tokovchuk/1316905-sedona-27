@@ -9,15 +9,15 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a href="index.html">
           <img src="img/logo.png" width="140" height="71" alt="Логотип">
         </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="mapstate.html">Карта штата</a></li>
+          <li class="current-page"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -101,73 +101,75 @@
           </button>
         </div>
       </section>
-      <section>
-      <ul>
+
+
+      <section class="results-search">
+      <ul class="results-search-list">
         <li>
           <h2>Amara Resort & Spa</h2>
           <img src="img/amara.jpg" width="135" height="90" alt="Отель 'Amara resort & spa'">
           <span>Гостиница</span>
           <span>от 4000 р.</span>
-          <ul>
+          <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="4 звезды рейтинга"></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
           </ul>
-          <span>Рейтинг 8,5</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="rating">Рейтинг 8,5</span>
+          <div class="detail"><a href="#">Подробнее</a></div>
+          <div class="booking"><a href="#">Забронировать</a></div>
         </li>
         <li>
           <h2>Desert Quail Inn</h2>
           <img src="img/desert.jpg" width="135" height="90" alt="Отель 'Desert quail inn'">
           <span>Мотель</span>
-          <span>от 3000 р.</span>
-          <ul>
+          <span >от 3000 р.</span>
+          <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="3 звезды рейтинга"></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
           </ul>
-          <span>Ретинг 8,9</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="rating">Ретинг 8,9</span>
+          <div class="detail"><a href="#">Подробнее</a></div>
+          <div class="booking"><a href="#">Забронировать</a></div>
         </li>
         <li>
           <h2>Villas at Poco Diablo</h2>
           <img src="img/villas.jpg" width="135" height="90" alt="Отель 'Villas at Poco Diablo'">
           <span>Аппартаменты</span>
           <span>от 2000 р.</span>
-          <ul>
+          <ul class="stars">
             <li><img src="img/star.svg" width="18" height="17" alt="2 звезды рейтинга"></li>
             <li><img src="img/star.svg" width="18" height="17" alt=""></li>
           </ul>
-          <span>Рейтинг 9,2</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="rating">Рейтинг 9,2</span>
+          <div class="detail"><a href="#">Подробнее</a></div>
+          <div class="booking"><a href="#">Забронировать</a></div>
         </li>
       </ul>
     </section>
     </main>
 
     <footer>
-      <p>
+      <p class="contacts">
         <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitSEDONA</a>
         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       </p>
-      <div>
+      <div class="social">
         <ul>
-          <li>
-            <a href="#">
+          <li class="social-twitter">
+            <a href="twitter.com">
               <img src="img/twitter.svg" width="17" height="15" alt="twitter">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social-fb">
+            <a href="fb.com">
               <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social-youtube">
+            <a href="youtube.com">
               <img src="img/youtube.svg" width="20" height="16" alt="youtube">
             </a>
           </li>

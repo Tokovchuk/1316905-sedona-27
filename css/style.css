@@ -47,11 +47,16 @@ a {
   color: #000000;
 }
 
+.current-page a {
+  color: #766357;
+}
+
 .intro-img {
+  width: 1200px;
+  height: 800px;
   background-color: #81b3d2;
-  background-image: url(img/background-photo.jpg);
-  background-image: url(img/intro-welcome.svg);
-  background-image: url(img/intro-mask.svg);
+  background-image: url(../img/background-photo.jpg);
+  background-image: url(../img/intro-welcome.svg);
 }
 
 
@@ -61,6 +66,11 @@ a {
 
   background-color: #ffffff;
   text-align: center;
+}
+
+.reasons-list,
+.reasons-list ul {
+  list-style: : none; /* почему не рабоатет? */
 }
 
 .reason-title h2 {
@@ -78,5 +88,118 @@ a {
 
   background-color: #81b3d2;
 }
+
+.form-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.form-search p {
+  text-align: center;
+  color: #333333;
+}
+
+.form-search div {
+  font-weight: bold;
+} /* почему в инпутах тект не болд? он же входит в див. Или я неправильно понимаю цсс =(*/
+
+.title-search {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+
+.button-search {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.less {
+  width: 38px;
+  height: 38px;
+}
+
+.more {
+  width: 38px;
+  height: 38px;
+}
+
+#adults,
+#children {
+  width: 38px;
+  height: 38px;
+}
+
+
+.contacts a {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.social ul {
+  list-style: none;
+}
+
+.social li {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+
+
+/* Гостиницы */
+
+.results-search-list,
+.stars {
+  list-style: none;
+}
+
+.results-search-list h2 {
+  font-size: 21px;
+}
+
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+}
+
+.detail {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.booking {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  text-align: center;
+}
+
+.detail a,
+.booking a {
+  color: white;
+}
+
+
+
 
 
