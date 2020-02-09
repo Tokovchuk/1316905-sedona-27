@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  padding-left: 40px;
-  padding-right: 40px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -55,8 +53,8 @@ a {
   width: 1200px;
   height: 800px;
   background-color: #81b3d2;
-  background-image: url(../img/background-photo.jpg);
-  background-image: url(../img/intro-welcome.svg);
+  background-image: url(../img/intro-welcome.svg), url(../img/background-photo.jpg) ;
+
 }
 
 
@@ -70,11 +68,11 @@ a {
 
 .reasons-list,
 .reasons-list ul {
-  list-style: : none; /* почему не рабоатет? */
+  list-style: : none; /* все равно не рабоатет? */
 }
 
 .reason-title h2 {
-  font-size: 21px
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -83,9 +81,6 @@ a {
 }
 
 .reason-item {
-  width: 400px;
-  height: 256px;
-
   background-color: #81b3d2;
 }
 
@@ -100,9 +95,11 @@ a {
   color: #333333;
 }
 
-.form-search div {
+.form-search div,
+.check-in-date,
+.check-out-date {
   font-weight: bold;
-} /* почему в инпутах тект не болд? он же входит в див. Или я неправильно понимаю цсс =(*/
+}
 
 .title-search {
   width: 568px;
@@ -136,8 +133,8 @@ a {
   height: 38px;
 }
 
-#adults,
-#children {
+.number-of-adults,
+.number-of-children {
   width: 38px;
   height: 38px;
 }
