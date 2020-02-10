@@ -68,7 +68,7 @@ a {
 
 .reasons-list,
 .reasons-list ul {
-  list-style: : none; /* все равно не рабоатет? */
+  list-style: none;
 }
 
 .reason-title h2 {
@@ -102,8 +102,6 @@ a {
 }
 
 .title-search {
-  width: 568px;
-  height: 86px;
   background-color: #766357;
 
   color: white;
@@ -114,15 +112,13 @@ a {
 
 
 .button-search {
-  width: 458px;
-  height: 58px;
   background-color: #81b3d2;
 
   font-size: 21px;
   font-weight: bold;
   color: white;
 }
-
+/*
 .less {
   width: 38px;
   height: 38px;
@@ -137,7 +133,7 @@ a {
 .number-of-children {
   width: 38px;
   height: 38px;
-}
+} */
 
 
 .contacts a {
@@ -172,21 +168,15 @@ a {
 
 
 .rating {
-  width: 110px;
-  height: 27px;
   background-color: #f2f2f2;
 }
 
 .detail {
-  width: 110px;
-  height: 27px;
   background-color: #81b3d2;
   text-align: center;
 }
 
 .booking {
-  width: 142px;
-  height: 27px;
   background-color: #766357;
   text-align: center;
 }
