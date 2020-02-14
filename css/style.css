@@ -41,18 +41,31 @@ a {
   background-color: #ffffff;
 
   display: flex;
+
 }
 
 .main-header-logo {
   width: 140px;
   height: 71px;
   margin: 0 auto;
+
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+
+
+
+  /*border: 5px solid blue;*/
+
 }
 
 .site-navigation {
   list-style: none;
-  align-self: space-between;
-  }
+
+
+  /*border: 2px solid green;*/
+}
+
+
 
 .site-navigation a {
   color: #000000;
@@ -63,12 +76,16 @@ a {
 }
 
 .intro-img {
-  width: 1200px;
+  margin-top: -15px;
+  margin-bottom: -207px;
+  width: 100%;
+  min-width: 1200px;
   height: 800px;
   background-color: #81b3d2;
-  background-image: url(../img/intro-welcome.svg), url(../img/background-photo.jpg) ;
-
-}
+  background: url(../img/intro-welcome.svg) no-repeat 50% 0,
+    url(../img/intro-mask.svg) no-repeat 50% 536px,
+    url(../img/background-photo.jpg) no-repeat 50% 50%;
+  }
 
 
 .reasons-title {
