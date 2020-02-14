@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
  .visually-hidden{
   position: absolute;
   visibility: hidden ;
@@ -35,11 +39,20 @@ a {
   text-align: center;
 
   background-color: #ffffff;
+
+  display: flex;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 71px;
+  margin: 0 auto;
 }
 
 .site-navigation {
   list-style: none;
-}
+  align-self: space-between;
+  }
 
 .site-navigation a {
   color: #000000;
