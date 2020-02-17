@@ -9,6 +9,7 @@ html {
 
 body {
   min-width: 1200px;
+  height: 100%;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -102,7 +103,7 @@ a {
   color: #000000;
 }
 
-.current-page a {
+.current-page {
   color: #766357;
 }
 
@@ -123,6 +124,16 @@ a {
 
 
 /* Контент*/
+
+.reasons-title {
+  padding-top: 61px;
+  padding-bottom: 56px;
+  width: 440px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  text-align: center;
+}
 
 .reasons-list {
   display: flex;
@@ -162,8 +173,7 @@ a {
   border: 2px solid pink;
 }
 
-.reasons-1,
-.reasons-2 {
+.reasons-with-image {
   display: flex;
   margin: 0;
   width: 100%;
@@ -171,8 +181,7 @@ a {
   border: 2px solid darkblue;
 }
 
-.reasons-1 img,
-.reasons-2 img {
+.reasons-with-image img {
   width: 66.66%;
   margin: 0;
   padding: 0;
@@ -209,22 +218,15 @@ a {
  }
 
  .features-item img {
-  order: -1;
-  margin-bottom: 32px;
+    margin-bottom: 32px;
  }
 
-.features-item h3 {
+.features-title {
   margin-bottom: 26px;
 }
 
 
-.reasons-title {
-  padding-top: 61px;
-  padding-bottom: 56px;
 
-  background-color: #ffffff;
-  text-align: center;
-}
 
 .reasons-list,
 .reasons-list ul {
@@ -244,9 +246,7 @@ a {
   background-color: #81b3d2;
 }
 
-.reasons-list>li:nth-child(3),
-.reasons-list li:nth-child(4),
-.reasons-list li:nth-child(5) {
+.reasons-list .reasons-without-image {
   width: 33.33%;
   background-color: #eeeeee;
 
@@ -262,33 +262,45 @@ a {
 
 
 /* Форма поиска*/
-.form-search {
+
+.search-hotel {
   position: relative;
 }
 
-.form-search h2 {
+.description-form {
+  margin: 0 auto;
+  margin-top: 57px;
+  margin-bottom: 52px;
+}
+
+.search-title {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
 }
 
-.form-search p {
+.search-hotels p {
   text-align: center;
   color: #333333;
 }
 
-.form-search div,
-.check-in-date,
-.check-out-date {
-  font-weight: bold;
+.form-search {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  width: 568px;
+
+
+  border: 2px solid navy;
 }
 
-.title-search {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%); /* почему не срабатывает? */
-  transform: translateY(-100%);
+.button-title-search {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 33px;
 
   background-color: #766357;
 
@@ -296,6 +308,35 @@ a {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.form-without-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: stretch;
+
+  padding: 0 55px;
+
+  background-color: white;
+
+  border: 2px solid gold;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 100%;
+
+  border: 2px solid brown;
+}
+
+.form-item.children,
+.form-item.adults {
+  width: 50%;
 }
 
 
@@ -306,7 +347,7 @@ a {
   font-weight: bold;
   color: white;
 }
-/*
+
 .less {
   width: 38px;
   height: 38px;
@@ -321,8 +362,13 @@ a {
 .number-of-children {
   width: 38px;
   height: 38px;
-} */
+}
 
+
+
+
+
+/* Футер*/
 
 .contacts a {
   font-size: 21px;
@@ -340,6 +386,12 @@ a {
   height: 48px;
   background-color: #81b3d2;
 }
+
+.copyright {
+  margin: 0;
+}
+
+
 
 
 
@@ -373,7 +425,6 @@ a {
 .booking a {
   color: white;
 }
-
 
 
 
