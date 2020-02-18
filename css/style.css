@@ -328,6 +328,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   font-weight: bold;
   width: 100%;
 
@@ -362,13 +363,68 @@ a {
 .number-of-children {
   width: 38px;
   height: 38px;
+  background-color: #f2f2f2;
+}
+
+.check-in-date,
+.check-out-date {
+  background-color: #f2f2f2;
+}
+
+
+
+/* Карта */
+
+.map img {
+height: 100%;
 }
 
 
 
 
-
 /* Футер*/
+
+.main-footer {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+
+  border: 2px solid red;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  padding-left: 132px;
+
+
+  border: 2px solid blue;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid blue;
+}
+
+.copyright {
+  display: flex;
+
+  border: 2px solid blue;
+}
+
+.contacts,
+.social,
+.copyright {
+  width: 33.33%;
+}
 
 .contacts a {
   font-size: 21px;
@@ -377,18 +433,24 @@ a {
 }
 
 
-.social ul {
+.social {
   list-style: none;
+  padding: 0;
 }
 
 .social li {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  text-align: center;
+  
+  margin: 3px;
 }
 
 .copyright {
   margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 
