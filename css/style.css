@@ -537,28 +537,182 @@ img {
 
 /* Гостиницы */
 
+/* Фильтры поиска готиниц*/
+
+.form-filter {
+  background-image: url(../img/filter-background.jpg);
+  background-position: 0 -100px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+  border: 2px solid red;
+}
+
+.infrastructure-type-check {
+  display: flex;
+
+
+  border: 2px solid gold;
+
+
+}
+
+.infrastructure,
+.type-housing {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+
+  border: 2px solid green;
+}
+
+.infrastructure-list ul,
+.type-housing-list ul {
+  list-style: none;
+}
+
+
+
+/* Результаты поиска гостиницы */
+
+.results-search {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid blue;
+}
+
+
 .results-search-list,
 .stars {
   list-style: none;
 }
 
+.results-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid pink;
+}
+
+.results-type-sorting {
+  display: flex;
+
+
+  padding-left: 72px;
+
+
+  border: 2px solid #123456;
+}
+
+
+.sorting-list {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 2px solid #654321;
+}
+
+
+
+/* Найденные варианты*/
+
+.results-search-list {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+
+  border: 2px solid #789789;
+}
+
+.results-search-item {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 30px 72px;
+
+  border: 2px solid purple;
+}
+
+.results-photo-info {
+  display: flex;
+  align-items: center;
+
+  border: 2px solid lightblue;
+}
+
+.results-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+
+  border: 2px solid gold;
+}
+
+/*.results-info>* {
+  width: 100%;
+}*/
+
+.results-info-title {
+  width: 100%;
+}
+
+.type-and-cost {
+  width: 100%;
+}
+
+
+.btn-detail-booking {
+   display: flex;
+}
+
+
+
 .results-search-list h2 {
   font-size: 21px;
 }
 
+.results-raiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 .rating {
   background-color: #f2f2f2;
+  padding: 5px 13px 6px 16px;
 }
 
 .detail {
   background-color: #81b3d2;
   text-align: center;
+  padding: 8px 17px;
+  margin-right: 6px;
 }
 
 .booking {
   background-color: #766357;
   text-align: center;
+  padding: 8px 17px;
+  margin-right: 6px;
 }
 
 .detail a,
