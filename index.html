@@ -111,19 +111,21 @@
     				      <input type="text" class="check-out-date" name="check-out-date" id="check-out" value="4 июля 2017">
                   <button type="button" class="calendar"></button>
                 </div>
-                <div class="form-item adults">
-    				      <label for="adults">Взрослые</label>
-                  <button type="button" class="less"></button>
-    				      <input type="number" class="number-of-adults" name="number-of-adults" id="adults" value="2">
-                  <button type="button" class="more"></button>
+                <div class="form-item double-item">
+                  <div class="adults">
+    				        <label for="adults">Взрослые:</label>
+                   <button type="button" class="less"></button>
+    				        <input type="number" class="number-of-adults" name="number-of-adults" id="adults" value="2">
+                    <button type="button" class="more"></button>
+                  </div>
+                  <div class="children">
+    				        <label for="children">Дети:</label>
+                    <button type="button" class="less"></button>
+    				        <input type="number" class="number-of-children" name="number-of-children" id="children" value="0">
+                    <button type="button" class="more"></button>
+                  </div>
                 </div>
-                <div class="form-item children">
-    				      <label for="children">Дети</label>
-                  <button type="button" class="less"></button>
-    				      <input type="number" class="number-of-children" name="number-of-children" id="children" value="0">
-                  <button type="button" class="more"></button>
-                </div>
-    				  <button type="submit" class="button-search">Найти</button>
+    				    <button type="submit" class="button-search">Найти</button>
               </div>
     			  </form>
 
@@ -131,7 +133,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта местности</h2>
-    			<img src="img/map.png" width="1200" height="593" atl="Расположение города Седона на карте">
+    			<img src="img/map.png" width="1200" height="593" alt="Расположение города Седона на карте">
     		</section>
     	</main>
 
