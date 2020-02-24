@@ -543,6 +543,8 @@ img {
   background-image: url(../img/filter-background.jpg);
   background-position: 0 -100px;
 
+  padding: 31px 72px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -552,13 +554,8 @@ img {
   border: 2px solid red;
 }
 
-.infrastructure-type-check {
-  display: flex;
-
-
-  border: 2px solid gold;
-
-
+.cost-form {
+  margin-left: auto;
 }
 
 .infrastructure,
@@ -571,8 +568,8 @@ img {
   border: 2px solid green;
 }
 
-.infrastructure-list ul,
-.type-housing-list ul {
+.infrastructure ul,
+.type-housing ul {
   list-style: none;
 }
 
@@ -622,6 +619,10 @@ img {
   border: 2px solid #654321;
 }
 
+.sorting-btn {
+  margin-left: auto;
+}
+
 
 
 /* Найденные варианты*/
@@ -632,6 +633,7 @@ img {
 
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid #f2f2f2;
 
   border: 2px solid #789789;
 }
@@ -640,7 +642,9 @@ img {
   display: flex;
   justify-content: space-between;
 
-  margin: 30px 72px;
+  padding: 30px 72px;
+
+  border-bottom: 1px solid #f2f2f2;
 
   border: 2px solid purple;
 }
@@ -660,9 +664,7 @@ img {
   border: 2px solid gold;
 }
 
-/*.results-info>* {
-  width: 100%;
-}*/
+
 
 .results-info-title {
   width: 100%;
@@ -715,8 +717,8 @@ img {
   margin-right: 6px;
 }
 
-.detail a,
-.booking a {
+.detail,
+.booking  {
   color: white;
 }
 

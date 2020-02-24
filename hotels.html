@@ -29,45 +29,39 @@
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <form method="post" action="https://www.echo.htmlacademy.ru">
             <div class="form-filter">
-              <div class="infrastructure-type-check">
-                <fieldset class="infrastructure">
-                  <div class="infrastructure-list">
-                    <legend>Инфраструктура</legend>
-                    <ul>
-                      <li class="infrstructure-item">
-                        <input type="checkbox" name="infrasrtucrure-pool" id="pool">
-                        <label for="pool">Бассейн</label>
-                      </li>
-                      <li class="infrstructure-item">
-                        <input type="checkbox" name="infrastructure-parking" id="parking">
-                        <label for="parking">Парковка</label>
-                      </li>
-                      <li class="infrstructure-item">
-                        <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi">
-                        <label for="wi-fi">Wi-Fi</label>
-                      </li>
-                    </ul>
-                  </div>
-                </fieldset>
-                <fieldset class="type-housing">
-                  <div class="type-housing-list">
-                    <legend>Тип жилья</legend>
-                    <ul>
-                      <li class="type-housing-item">
-                       <input type="checkbox" name="type-hotel" id="hotel">
-                       <label for="hotel">Гостиница</label>
-                     </li>
-                     <li class="type-housing-item">
-                       <input type="checkbox" name="type-motel" id="motel">
-                       <label for="motel">Мотель</label>
-                     </li>
-                     <li class="type-housing-item">
-                       <input type="checkbox" name="type-apart" id="apart">
-                       <label for="apart">Апартаменты</label>
-                     </li>
-                    </ul>
-                  </div>
-                </div>
+              <fieldset class="infrastructure">
+                <legend>Инфраструктура</legend>
+                <ul>
+                  <li class="infrstructure-item">
+                    <input type="checkbox" name="infrasrtucrure-pool" id="pool">
+                    <label for="pool">Бассейн</label>
+                  </li>
+                  <li class="infrstructure-item">
+                    <input type="checkbox" name="infrastructure-parking" id="parking">
+                    <label for="parking">Парковка</label>
+                  </li>
+                  <li class="infrstructure-item">
+                    <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi">
+                    <label for="wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="type-housing">
+                <legend>Тип жилья</legend>
+                <ul>
+                  <li class="type-housing-item">
+                    <input type="checkbox" name="type-hotel" id="hotel">
+                    <label for="hotel">Гостиница</label>
+                  </li>
+                  <li class="type-housing-item">
+                    <input type="checkbox" name="type-motel" id="motel">
+                    <label for="motel">Мотель</label>
+                  </li>
+                  <li class="type-housing-item">
+                    <input type="checkbox" name="type-apart" id="apart">
+                    <label for="apart">Апартаменты</label>
+                  </li>
+                </ul>
               </fieldset>
               <fieldset class="cost-form">
                 <legend>Стоимость в сутки(р):</legend>
@@ -89,21 +83,19 @@
         </section>
         <section class="results-search">
           <div class="results-title">
-            <div class="results-type-sorting">
-              <h3>Найдено: <span>3</span></h3>
-              <h4>Сортировка</h4>
-              <ul class="sorting-list">
-                <li>
-                  <a href="#">по цене</a>
-                </li>
-                <li>
-                  <a href="#">по типу</a>
-                </li>
-                <li>
-                  <a href="#">по рейтингу</a>
-                </li>
-              </ul>
-            </div>
+            <h3>Найдено: <span>3</span></h3>
+            <h4>Сортировка:</h4>
+            <ul class="sorting-list">
+              <li>
+                <a href="#">по цене</a>
+              </li>
+              <li>
+                <a href="#">по типу</a>
+              </li>
+              <li>
+                <a href="#">по рейтингу</a>
+              </li>
+            </ul>
             <div class="sorting-btn">
               <button type="button">
                 <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
@@ -173,8 +165,8 @@
                     <span>от 2000 р.</span>
                   </div>
                   <div class="btn-detail-booking">
-                    <div class="detail"><a href="#">Подробнее</a></div>
-                    <div class="booking"><a href="#">Забронировать</a></div>
+                    <a href="#" class="detail">Подробнее</a>
+                    <a href="#" class="bookig">Забронировать</a>
                   </div>
                 </div>
               </div>
