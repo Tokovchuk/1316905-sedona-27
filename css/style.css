@@ -365,10 +365,7 @@ img {
 
 }
 
-/*.form-item.children,
-.form-item.adults {
-  width: 50%;
-}*/
+
 
 
 .button-search {
@@ -599,15 +596,6 @@ img {
   border: 2px solid pink;
 }
 
-.results-type-sorting {
-  display: flex;
-
-
-  padding-left: 72px;
-
-
-  border: 2px solid #123456;
-}
 
 
 .sorting-list {
@@ -616,7 +604,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  border: 2px solid #654321;
+  border: 2px solid black;
 }
 
 .sorting-btn {
@@ -635,7 +623,7 @@ img {
   margin: 0;
   border-bottom: 1px solid #f2f2f2;
 
-  border: 2px solid #789789;
+  border: 2px solid yellow;
 }
 
 .results-search-item {
@@ -689,11 +677,16 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  margin-left: auto;
+
+  border: 1px solid black;
 }
 
 .stars {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 
