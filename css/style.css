@@ -54,6 +54,8 @@ img {
 
 }
 
+/* Навигация */
+
 .main-navigation {
   text-align: center;
 
@@ -84,13 +86,11 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  border: 2px solid green;
 }
 
 .site-navigation li {
   width: 25%;
 
-  border: 2px solid black;
   margin: 0;
 }
 
@@ -446,7 +446,7 @@ img {
   padding-top: 36px;
   padding-bottom: 32px;
 
-  border: 2px solid red;
+
 }
 
 .contacts {
@@ -459,7 +459,7 @@ img {
   padding-left: 132px;
 
 
-  border: 2px solid blue;
+
 }
 
 .social {
@@ -472,13 +472,13 @@ img {
   padding: 0;
   margin: 0;
 
-  border: 2px solid blue;
+
 }
 
 .copyright {
   display: flex;
 
-  border: 2px solid blue;
+
 }
 
 .contacts,
@@ -504,7 +504,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  border: 2px solid gold;
+
 
   margin: 3px;
 }
@@ -578,7 +578,7 @@ img {
   display: flex;
   flex-direction: column;
 
-  border: 2px solid blue;
+
 }
 
 
@@ -591,12 +591,27 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  padding: 30px 72px;
 
-  border: 2px solid pink;
+  border-bottom: 1px solid #f2f2f2;
+
+
 }
 
+.results-found {
+  font-size: 21px;
+  font-weight: bold;
 
+  margin-right: 49px;
+}
+
+.results-sorting {
+  font-size: 12px;
+  line-height: 18px;
+
+  margin-right: 40px;
+}
 
 .sorting-list {
   list-style: none;
@@ -604,13 +619,36 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  border: 2px solid black;
+  padding: 0;
+
+
+}
+
+.sorting-type-price,
+.sorting-type-type,
+.sorting-type-raiting {
+  margin-right: 33px;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-type-price {
+  color: #81b3d2;
+  border: 0;
 }
 
 .sorting-btn {
   margin-left: auto;
 }
 
+.sorting-btn-down,
+.sorting-btn-up {
+  border: 0;
+  background-color: transparent;
+}
 
 
 /* Найденные варианты*/
@@ -623,55 +661,59 @@ img {
   margin: 0;
   border-bottom: 1px solid #f2f2f2;
 
-  border: 2px solid yellow;
+
 }
 
 .results-search-item {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 
   padding: 30px 72px;
 
   border-bottom: 1px solid #f2f2f2;
 
-  border: 2px solid purple;
+
 }
 
 .results-photo-info {
   display: flex;
-  align-items: center;
+  align-items: space-between;
 
-  border: 2px solid lightblue;
+
 }
 
 .results-info {
   display: flex;
   flex-wrap: wrap;
+  align-items: space-between;
+
   padding-left: 30px;
 
-  border: 2px solid gold;
 }
 
 
 
 .results-info-title {
   width: 100%;
+  margin: 0;
+
+  line-height: 16px; /* правильно ли я победил момент того, что у меня заголовок был ниже верхней границы фото?
+
+  и непонятено еще то, что допустим нажимаешь на надпись в зеплине или авакоде, и там пишется, что шрифт 21пиксель,
+  высота строчки 26пикселей, а высота "надписи" 16пикселей, как понимать? для наглядности скрин кину в тг, а то я
+  тот еще обьснятель*/
 }
 
-.type-and-cost {
-  width: 100%;
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 6px;
 }
 
-
-.btn-detail-booking {
-   display: flex;
-}
-
-
-
-.results-search-list h2 {
-  font-size: 21px;
-}
 
 .results-raiting {
   display: flex;
@@ -680,7 +722,7 @@ img {
 
   margin-left: auto;
 
-  border: 1px solid black;
+
 }
 
 .stars {
@@ -699,21 +741,24 @@ img {
 .detail {
   background-color: #81b3d2;
   text-align: center;
-  padding: 8px 17px;
-  margin-right: 6px;
+  padding-left:16px;
+  padding-right: 16px;
+  height: 27px;
+
+  color: white;
 }
 
 .booking {
   background-color: #766357;
   text-align: center;
-  padding: 8px 17px;
-  margin-right: 6px;
-}
+  padding-left:16px;
+  padding-right: 16px;
+  height: 27px;
 
-.detail,
-.booking  {
   color: white;
 }
+
+
 
 
 

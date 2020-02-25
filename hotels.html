@@ -83,25 +83,29 @@
         </section>
         <section class="results-search">
           <div class="results-title">
-            <h3>Найдено: <span>3</span></h3>
-            <h4>Сортировка:</h4>
+            <h3 class="results-found">Найдено: <span>3</span></h3>
+            <span class="results-sorting">Сортировка:</span>
             <ul class="sorting-list">
               <li>
-                <a href="#">по цене</a>
+                <a href="#" class="sorting-type-price">по цене</a>
               </li>
               <li>
-                <a href="#">по типу</a>
+                <a href="#" class="sorting-type-type">по типу</a>
               </li>
               <li>
-                <a href="#">по рейтингу</a>
+                <a href="#" class="sorting-type-raiting">по рейтингу</a>
               </li>
             </ul>
             <div class="sorting-btn">
-              <button type="button">
-                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+              <button type="button" class="sorting-btn-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                </svg>
               </button>
-              <button type="button">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+              <button type="button" class="sorting-btn-up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#81b3d2" d="M5.5 0L0 10h11z"/>
+                </svg>
               </button>
             </div>
           </div>
@@ -111,13 +115,13 @@
                 <img src="img/amara.jpg" width="135" height="90" alt="Отель 'Amara resort & spa'">
                 <div class="results-info">
                   <h2 class="results-info-title">Amara Resort & Spa</h2>
-                  <div class="type-and-cost">
+                  <div class="column">
                     <span>Гостиница</span>
-                    <span>от 4000 р.</span>
+                    <a href="#" class="detail">Подробнее</a>
                   </div>
-                  <div class="btn-detail-booking">
-                    <div class="detail"><a href="#">Подробнее</a></div>
-                    <div class="booking"><a href="#">Забронировать</a></div>
+                  <div class="column">
+                    <span>от 4000 р.</span>
+                    <a href="#" class="booking">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -135,14 +139,14 @@
               <div class="results-photo-info">
                 <img src="img/desert.jpg" width="135" height="90" alt="Отель 'Desert quail inn'">
                 <div class="results-info">
-                  <h2>Desert Quail Inn</h2>
-                  <div class="type-and-cost">
+                  <h2 class="results-info-title">Desert Quail Inn</h2>
+                  <div class="column">
                     <span>Мотель</span>
-                    <span >от 3000 р.</span>
+                    <a href="#" class="detail">Подробнее</a>
                   </div>
-                  <div class="btn-detail-booking">
-                    <div class="detail"><a href="#">Подробнее</a></div>
-                    <div class="booking"><a href="#">Забронировать</a></div>
+                  <div class="column">
+                    <span>от 3000 р.</span>
+                    <a href="#" class="booking">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -159,14 +163,14 @@
               <div class="results-photo-info">
                 <img src="img/villas.jpg" width="135" height="90" alt="Отель 'Villas at Poco Diablo'">
                 <div class="results-info">
-                  <h2>Villas at Poco Diablo</h2>
-                  <div class="type-and-cost">
-                    <span>Аппартаменты</span>
-                    <span>от 2000 р.</span>
-                  </div>
-                  <div class="btn-detail-booking">
+                  <h2 class="results-info-title">Villas at Poco Diablo</h2>
+                  <div class="column">
+                    <span>Апартаменты</span>
                     <a href="#" class="detail">Подробнее</a>
-                    <a href="#" class="bookig">Забронировать</a>
+                  </div>
+                  <div class="column">
+                    <span>от 2000 р.</span>
+                    <a href="#" class="booking">Забронировать</a>
                   </div>
                 </div>
               </div>
