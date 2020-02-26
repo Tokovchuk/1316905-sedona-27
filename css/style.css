@@ -90,6 +90,7 @@ img {
 
 .site-navigation li {
   width: 25%;
+  font-weight: bold;
 
   margin: 0;
 }
@@ -108,7 +109,16 @@ img {
   color: #000000;
 }
 
-.current-page {
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+a.current-page {
   color: #766357;
 }
 
@@ -436,97 +446,7 @@ img {
 
 
 
-/* Футер*/
 
-.main-footer {
-  display: flex;
-  align-items: center;
-
-  margin: 0;
-  padding-top: 36px;
-  padding-bottom: 32px;
-
-
-}
-
-.contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-
-  margin: 0px;
-  padding-left: 132px;
-
-
-
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-
-}
-
-.copyright {
-  display: flex;
-
-
-}
-
-.contacts,
-.social,
-.copyright {
-  width: 33.33%;
-}
-
-.contacts a {
-  font-size: 21px;
-  font-weight: bold;
-  color: #000000;
-}
-
-
-
-.social-icon {
-  width: 46px;
-  height: 48px;
-  background-color: #81b3d2;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-
-  margin: 3px;
-}
-
-.social-icon a {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright {
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright span {
-  margin-right: 8px;
-}
 
 
 
@@ -595,8 +515,6 @@ img {
   padding: 30px 72px;
 
   border-bottom: 1px solid #f2f2f2;
-
-
 }
 
 .results-found {
@@ -626,7 +544,7 @@ img {
 
 .sorting-type-price,
 .sorting-type-type,
-.sorting-type-raiting {
+.sorting-type-rating {
   margin-right: 33px;
   font-size: 12px;
   line-height: 18px;
@@ -667,7 +585,6 @@ img {
 .results-search-item {
   display: flex;
   justify-content: space-between;
-  align-items: start;
 
   padding: 30px 72px;
 
@@ -697,12 +614,23 @@ img {
 .results-info-title {
   width: 100%;
   margin: 0;
+  margin-top: -4px;
 
-  line-height: 16px; /* правильно ли я победил момент того, что у меня заголовок был ниже верхней границы фото?
+  font-size: 21px;
 
-  и непонятено еще то, что допустим нажимаешь на надпись в зеплине или авакоде, и там пишется, что шрифт 21пиксель,
-  высота строчки 26пикселей, а высота "надписи" 16пикселей, как понимать? для наглядности скрин кину в тг, а то я
-  тот еще обьснятель*/
+}
+
+.results-info-title a {
+  color: black;
+}
+
+.results-info-title:hover a {
+  color: #81b3d2;
+}
+
+.results-info-title:active a {
+  color: black;
+  opacity: 0.3;
 }
 
 
@@ -715,10 +643,11 @@ img {
 }
 
 
-.results-raiting {
+.results-rating {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 
   margin-left: auto;
 
@@ -734,8 +663,9 @@ img {
 
 
 .rating {
-  background-color: #f2f2f2;
   padding: 5px 13px 6px 16px;
+  background-color: #f2f2f2;
+  color: #666666;
 }
 
 .detail {
@@ -746,6 +676,15 @@ img {
   height: 27px;
 
   color: white;
+  font-weight: bold;
+}
+
+.detail:hover {
+  background-color: #669ec0;
+}
+
+.detail:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .booking {
@@ -756,10 +695,123 @@ img {
   height: 27px;
 
   color: white;
+  font-weight: bold;
+}
+
+.booking:hover {
+  background-color: #604e43;
+}
+
+.booking:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Футер*/
+
+.main-footer {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 32px;
+
+
+}
+
+.contacts {
+  width: 33.33%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  margin: 0px;
+  padding-left: 132px;
+}
+
+.contacts a:hover {
+  color: #81b3d2;
+}
+
+.contacts a:active {
+ opacity: 0.3;
+}
+
+.social {
+  width: 33.33%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.contacts a {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
 
 
 
+.social-icon {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 3px;
+}
+
+.social-icon:hover {
+  background-color: #669ec0;
+}
+
+.social-icon:active svg{
+  opacity: 0.3;
+}
+
+.social-icon a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  margin-left: auto;
+  margin-right: 101px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright:hover path {
+  fill: #81b3d2;
+}
+
+.copyright:active path {
+  fill: #bdbbbc;
+}
+
+.copyright span {
+  margin-right: 8px;
+}
 
 
