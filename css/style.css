@@ -150,6 +150,11 @@ a.current-page {
   text-align: center;
 }
 
+.reasons-title h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 .reasons-list {
   display: flex;
   flex-wrap: wrap;
@@ -248,6 +253,9 @@ a.current-page {
 
 .features-title {
   margin-bottom: 26px;
+
+  font-size: 21px;
+  line-height: 21px;
 }
 
 
@@ -266,6 +274,13 @@ a.current-page {
 
 .reason-item {
   background-color: #81b3d2;
+}
+
+.reasons-item-title {
+  font-size: 21px;
+  line-height: 21px;
+
+  padding: 0 50px;
 }
 
 .reasons-list .reasons-without-image {
@@ -287,7 +302,7 @@ a.current-page {
   padding-right: 60px;
 
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 .reasons-without-image p {
@@ -327,9 +342,6 @@ a.current-page {
   margin: 0 auto;
 
   width: 568px;
-
-
-  border: 2px solid navy;
 }
 
 .button-title-search {
@@ -345,9 +357,16 @@ a.current-page {
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
+
+  border: 0;
+  cursor: pointer;
 }
 
 .form-without-title {
+  position: absolute;
+
+  width: 568px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -356,8 +375,6 @@ a.current-page {
   padding: 55px;
 
   background-color: white;
-
-  border: 2px solid gold;
 }
 
 .form-item {
@@ -371,15 +388,15 @@ a.current-page {
   margin-bottom: 30px;
 
   position: relative;
-
-  border: 2px solid brown;
 }
 
 .double-item {
   display: flex;
+  justify-content: flex-start;
+}
 
-
-
+.adults-label {
+  margin-right: 41px;
 }
 
 .adults,
@@ -392,7 +409,7 @@ a.current-page {
 }
 
 .children {
-  padding-left: 55px;
+  margin-left: 55px;
 }
 
 
@@ -417,8 +434,8 @@ a.current-page {
 
 .btn-group {
   display: flex;
-
-
+  width: 114px;
+  position: relative;
 }
 
 
@@ -438,19 +455,73 @@ a.current-page {
   text-transform: uppercase;
 }
 
+.button-search:hover {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .less {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
   border: 0;
+  padding: 0;
+  cursor: pointer;
+
+
 }
+
+
+.less::after {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  background-color: #cacaca;
+  width: 12px;
+  height: 3px;
+}
+
+
+.less:hover .less::after {
+  background-color: black;
+} /* почему не работает?*/
+
+
 
 .more {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
   border: 0;
+  padding: 0;
+  cursor: pointer;
+
+
 }
+
+.more::before,
+.more::after {
+  content: "";
+
+  position: absolute;
+  right:12px;
+  top: 18px;
+
+  background-color: #cacaca;
+  width: 12px;
+  height: 3px;
+}
+
+.more::before {
+transform: rotate(90deg);
+}
+
+
 
 .number-of-adults,
 .number-of-children {
@@ -469,22 +540,32 @@ a.current-page {
 
 .calendar {
   position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-top: -11px;
-  margin-left: -30px;
+  right: 9px;
 
   width: 21px;
   height: 22px;
   margin-bottom: 30px;
 
-  background-image: url(../img/calendar.svg);
+  /*background-image: url(../img/calendar.svg);*/
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: 0;
-
+  cursor: pointer;
 }
 
+.calendar:hover path {
+  fill: black;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
+}
+
+.calendar svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /* Карта */
 
