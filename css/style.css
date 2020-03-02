@@ -362,6 +362,15 @@ a.current-page {
   cursor: pointer;
 }
 
+.button-title-search:hover {
+  background-color: #604e43;
+}
+
+.button-title-search:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form-without-title {
   position: absolute;
 
@@ -375,6 +384,9 @@ a.current-page {
   padding: 55px;
 
   background-color: white;
+
+  z-index: 3;
+
 }
 
 .form-item {
@@ -429,7 +441,16 @@ a.current-page {
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+}
 
+.input:hover {
+  background-color: #ebebeb;
+}
+
+.input:focus {
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .btn-group {
@@ -487,11 +508,13 @@ a.current-page {
 }
 
 
-.less:hover .less::after {
+.less:hover::after {
   background-color: black;
-} /* почему не работает?*/
+}
 
-
+.less:active::after {
+  background-color: #81b3d2;
+}
 
 .more {
   width: 38px;
@@ -521,7 +544,15 @@ a.current-page {
 transform: rotate(90deg);
 }
 
+.more:hover::after,
+.more:hover::before {
+  background-color: black;
+}
 
+.more:active::after,
+.more:active::before {
+  background-color: #81b3d2;
+}
 
 .number-of-adults,
 .number-of-children {
@@ -529,9 +560,16 @@ transform: rotate(90deg);
   height: 38px;
   background-color: #f2f2f2;
   border: 0;
+  text-align: center;
 }
 
-
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.number[type='number'] {
+    -moz-appearance: textfield;
+}
 
 .check-in-date,
 .check-out-date {
@@ -546,7 +584,7 @@ transform: rotate(90deg);
   height: 22px;
   margin-bottom: 30px;
 
-  /*background-image: url(../img/calendar.svg);*/
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: 0;
@@ -569,8 +607,24 @@ transform: rotate(90deg);
 
 /* Карта */
 
+.map {
+  position: relative;
+}
 
+.map iframe {
+  position: relative;
+  z-index: 2;
+}
 
+.map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin:0;
+
+}
 
 
 
@@ -586,7 +640,7 @@ transform: rotate(90deg);
 
 .form-filter {
   background-image: url(../img/filter-background.jpg);
-  background-position: 0 -100px;
+  background-position: 0 -300px;
 
   padding: 31px 72px;
 
@@ -608,15 +662,71 @@ transform: rotate(90deg);
   display: flex;
   margin: 0;
   padding: 0;
-  padding-left: 72px;
+
+  color: white;
 
   border: 2px solid green;
+}
+
+.infrastructure {
+  margin-right: 115px;
+}
+
+.infrastructure legend,
+.type-housing legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  margin-bottom: 28px;
 }
 
 .infrastructure ul,
 .type-housing ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
 }
+
+.infrastructure li,
+.type-housing li {
+  margin-bottom: 28px;
+  padding-left: 40px;
+}
+
+.infrastructure li:last-child,
+.type-housing li:last-child {
+  margin-bottom: 0;
+}
+
+/* Нестандртные чекбоксы */
+
+.checkbox-form {
+  position: relative;
+}
+
+.checkbox-form input{
+ display: none;
+}
+
+.checkbox-form  label::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+
+
 
 
 
@@ -666,8 +776,6 @@ transform: rotate(90deg);
   flex-wrap: wrap;
 
   padding: 0;
-
-
 }
 
 .sorting-type-price,
@@ -681,14 +789,34 @@ transform: rotate(90deg);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-type-price {
+/*.sorting-type-price {
   color: #81b3d2;
+  border: 0;
+}*/
+
+.sorting-list a:hover {
+  color: #81b3d2;
+}
+
+.sorting-list a:active {
+  color: black;
   border: 0;
 }
 
 .sorting-btn {
   margin-left: auto;
 }
+
+.sorting-btn-down:hover path,
+.sorting-btn-up:hover path {
+  fill: black;
+}
+
+.sorting-btn-down:active path,
+.sorting-btn-up:active path {
+  fill: #81b3d2;
+}
+
 
 .sorting-btn-down,
 .sorting-btn-up {
