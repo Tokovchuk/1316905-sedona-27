@@ -664,8 +664,7 @@ transform: rotate(90deg);
   padding: 0;
 
   color: white;
-
-  border: 2px solid green;
+  border: 0;
 }
 
 .infrastructure {
@@ -693,7 +692,8 @@ transform: rotate(90deg);
 .infrastructure li,
 .type-housing li {
   margin-bottom: 28px;
-  padding-left: 40px;
+  display: block;
+
 }
 
 .infrastructure li:last-child,
@@ -703,24 +703,48 @@ transform: rotate(90deg);
 
 /* Нестандртные чекбоксы */
 
-.checkbox-form {
-  position: relative;
+
+
+.check-label {
+  padding-left: 40px;
 }
 
-.checkbox-form input{
- display: none;
-}
-
-.checkbox-form  label::before {
-  content: "";
+.checkbox {
   position: absolute;
-  top: auto;
-  left: 0;
   width: 27px;
-  height: 23px;
+  height: 27px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-input:focus + .checkbox {
+  background-image: url(../img/checkbox-off.svg);
+  border: 2px solid #81b3d2;
+}
+
+
+.check-input:checked + .checkbox {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled + .checkbox {
+  background-image: url(../img/checkbox-off-3.svg);
+}
+
+.check-input:disabled:checked + .checkbox {
+  background-image: url(../img/checkbox-on-2.svg);
+}
+
+.checkbox-form  label {
+
 }
 
 
