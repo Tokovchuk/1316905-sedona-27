@@ -134,7 +134,7 @@ a.current-page {
     url(../img/intro-mask.svg),
     url(../img/background-photo.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 50% top 76px, left 0%  top 450px, 0 -83px;
+  background-position: left 50% top 76px, left 0%  top 451px, 0 -83px;
   background-size: 459px 353px, 100%, 100%;
   }
 
