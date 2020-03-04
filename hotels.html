@@ -27,63 +27,74 @@
         <h1 class="visually-hidden">Гостиницы</h1>
         <section>
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-          <form method="post" action="https://www.echo.htmlacademy.ru">
+          <form method="post" action="https://echo.htmlacademy.ru">
             <div class="form-filter">
               <fieldset class="checkbox-form infrastructure">
-                <legend>Инфраструктура</legend>
+                <legend>Инфраструктура:</legend>
                 <ul>
                   <li class="infrstructure-item">
-                    <input type="checkbox" name="infrasrtucrure-pool" id="pool" class="check-input" checked>
-                    <span class="checkbox"></span>
-                    <label for="pool" class="check-label">Бассейн</label>
+                    <label class="check-label">Бассейн
+                      <input type="checkbox" name="infrasrtucrure-pool" class="check-input" checked>
+                      <span class="checkbox"></span>
+                    </label>
 
                   </li>
                   <li class="infrstructure-item">
-                    <input type="checkbox" name="infrastructure-parking" id="parking" class="check-input">
-                    <span class="checkbox"></span>
-                    <label for="parking" class="check-label">Парковка</label>
+                    <label class="check-label">Парковка
+                      <input type="checkbox" name="infrastructure-parking" class="check-input">
+                      <span class="checkbox"></span>
+                    </label>
                   </li>
                   <li class="infrstructure-item">
-                    <input type="checkbox" name="infrastructure-wi-fi" id="wi-fi" class="check-input">
-                    <span class="checkbox"></span>
-                    <label for="wi-fi" class="check-label">Wi-Fi</label>
+                    <label class="check-label">Wi-Fi
+                      <input type="checkbox" name="infrastructure-wi-fi" class="check-input">
+                      <span class="checkbox"></span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="checkbox-form type-housing">
-                <legend>Тип жилья</legend>
+                <legend>Тип жилья:</legend>
                 <ul>
                   <li class="type-housing-item">
-                    <input type="checkbox" name="type-hotel" id="hotel" class="check-input" checked>
-                    <span class="checkbox"></span>
-                    <label for="hotel" class="check-label">Гостиница</label>
+                    <label class="check-label">Гостиница
+                      <input type="checkbox" name="type-hotel" class="check-input" checked>
+                      <span class="checkbox"></span>
+                    </label>
                   </li>
                   <li class="type-housing-item">
-                    <input type="checkbox" name="type-motel" id="motel" class="check-input" checked>
-                    <span class="checkbox"></span>
-                    <label for="motel" class="check-label">Мотель</label>
+                    <label class="check-label">Мотель
+                      <input type="checkbox" name="type-motel" class="check-input" checked>
+                      <span class="checkbox"></span>
+                    </label>
                   </li>
                   <li class="type-housing-item">
-                    <input type="checkbox" name="type-apart" id="apart" class="check-input" checked>
-                    <span class="checkbox"></span>
-                    <label for="apart" class="check-label">Апартаменты</label>
+                    <label class="check-label">Апартаменты
+                      <input type="checkbox" name="type-apart" class="check-input" checked>
+                      <span class="checkbox"></span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="cost-form">
-                <legend>Стоимость в сутки(р):</legend>
-                <div>
-                  <label for="min">от</label>
-                  <input type="number" name="cost-min" id="min" min="0" placeholder="0">
-                  <label for="max">до</label>
-                  <input type="number" name="cost-max" id="max" placeholder="3000">
+                <legend class="cost-form-title">Стоимость в сутки(р):</legend>
+
+                <div class="cost-control">
+                  <label class="min-cost">от</label>
+                  <input type="number" name="cost-min" min="0" value="0">
+                  <label for="max" class="max-cost">до</label>
+                  <input type="number" name="cost-max" id="max" value="3000">
                 </div>
-                <div>
-                  <button type="button"></button>
-                  <div><hr width="170"></div>
-                  <button type="button"></button>
+
+                <div class="range-control">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
                 </div>
-                <button type="submit">Показать</button>
+
+                <button type="submit" class="show-cost">Показать</button>
               </fieldset>
             </div>
           </form>
@@ -94,7 +105,7 @@
             <span class="results-sorting">Сортировка:</span>
             <ul class="sorting-list">
               <li>
-                <a href="#" class="sorting-type-price">по цене</a>
+                <a href="#" class="sorting-type-price active">по цене</a>
               </li>
               <li>
                 <a href="#" class="sorting-type-type">по типу</a>
@@ -106,12 +117,12 @@
             <div class="sorting-btn">
               <button type="button" class="sorting-btn-down">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                  <path class="" fill="#cacaca" d="M5.5 10L0 0h11"/>
                 </svg>
               </button>
               <button type="button" class="sorting-btn-up">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                  <path class="active" fill="#cacaca" d="M5.5 0L0 10h11z"/>
                 </svg>
               </button>
             </div>

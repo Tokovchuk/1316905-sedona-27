@@ -47,6 +47,7 @@ img {
 }
 
 .center-block {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: white;
@@ -441,10 +442,13 @@ a.current-page {
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  border: 2px solid #f2f2f2;
 }
 
 .input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .input:focus {
@@ -471,6 +475,7 @@ a.current-page {
   margin-top: 25px;
 
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -560,6 +565,8 @@ transform: rotate(90deg);
   height: 38px;
   background-color: #f2f2f2;
   border: 0;
+
+  font-weight: bold;
   text-align: center;
 }
 
@@ -640,7 +647,7 @@ transform: rotate(90deg);
 
 .form-filter {
   background-image: url(../img/filter-background.jpg);
-  background-position: 0 -300px;
+  background-position: 0 -238px;
 
   padding: 31px 72px;
 
@@ -648,9 +655,6 @@ transform: rotate(90deg);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
-
-  border: 2px solid red;
 }
 
 .cost-form {
@@ -706,11 +710,14 @@ transform: rotate(90deg);
 
 
 .check-label {
+  position: relative;
   padding-left: 40px;
 }
 
 .checkbox {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 27px;
   height: 27px;
   background-image: url(../img/checkbox-off.svg);
@@ -727,7 +734,7 @@ transform: rotate(90deg);
 
 .check-input:focus + .checkbox {
   background-image: url(../img/checkbox-off.svg);
-  border: 2px solid #81b3d2;
+  outline: 2px solid #81b3d2;
 }
 
 
@@ -748,9 +755,140 @@ transform: rotate(90deg);
 }
 
 
+/* Форма диапазонов цен*/
+
+.cost-form {
+  width: 330px;
+  color: white;
+  text-transform:uppercase;
+
+  border: 0;
+  padding: 0;
+
+}
+
+.cost-form-title {
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.cost-control {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+  font-size: 0;
+}
+
+.cost-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+}
+
+.cost-control label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  cursor: pointer;
+}
+
+.cost-control .min-cost,
+.cost-control .max-cost {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.cost-control input {
+  width: 50px;
+  height: 100%;
+  margin: 0;
+
+  color: inherit;
+  font-size: 14px;
+  line-height: 21px;
+
+  background: none;
+  border: none;
+}
 
 
+.range-control {
+  position: relative;
 
+  margin-bottom: 32px;
+}
+
+.range-control .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 2px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.show-cost {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.show-cost:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 
 
@@ -759,8 +897,6 @@ transform: rotate(90deg);
 .results-search {
   display: flex;
   flex-direction: column;
-
-
 }
 
 
@@ -813,10 +949,7 @@ transform: rotate(90deg);
   border-bottom: 1px dotted #81b3d2;
 }
 
-/*.sorting-type-price {
-  color: #81b3d2;
-  border: 0;
-}*/
+
 
 .sorting-list a:hover {
   color: #81b3d2;
@@ -848,6 +981,11 @@ transform: rotate(90deg);
   background-color: transparent;
 }
 
+.active {
+  color: #81b3d2;
+  border: 0;
+  fill: #81b3d2;
+}
 
 /* Найденные варианты*/
 
@@ -857,9 +995,6 @@ transform: rotate(90deg);
 
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #f2f2f2;
-
-
 }
 
 .results-search-item {
@@ -904,11 +1039,11 @@ transform: rotate(90deg);
   color: black;
 }
 
-.results-info-title:hover a {
+.results-info-title a:hover {
   color: #81b3d2;
 }
 
-.results-info-title:active a {
+.results-info-title a:active {
   color: black;
   opacity: 0.3;
 }
@@ -996,8 +1131,16 @@ transform: rotate(90deg);
   margin: 0;
   padding-top: 36px;
   padding-bottom: 32px;
+}
 
+.main-footer.index-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
 
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .contacts {
