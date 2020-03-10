@@ -82,17 +82,15 @@ img {
   display: flex;
 
   margin: 0;
-  padding-left: 72px;
+  padding-left: 71px;
   padding-right: 72px;
   padding-top: 15px;
   padding-bottom: 15px;
-
 }
 
 .site-navigation li {
   width: 25%;
   font-weight: bold;
-
   margin: 0;
 }
 
@@ -134,7 +132,7 @@ a.current-page {
     url(../img/intro-mask.svg),
     url(../img/background-photo.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 50% top 76px, left 0%  top 451px, 0 -83px;
+  background-position: left 50% top 76px, left 0%  top 452px, 0 -83px;
   background-size: 459px 353px, 100%, 100%;
   }
 
@@ -142,8 +140,8 @@ a.current-page {
 /* Контент*/
 
 .reasons-title {
-  padding-top: 61px;
-  padding-bottom: 56px;
+  padding-top: 62px;
+  padding-bottom: 53px;
   width: 490px;
   margin: 0 auto;
 
@@ -154,6 +152,14 @@ a.current-page {
 .reasons-title h2 {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.reasons-title p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reasons-list {
@@ -161,16 +167,10 @@ a.current-page {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
-
-
 }
 
 .reasons-list>li {
   width: 100%;
-
-
-
 }
 
 .reasons-list>li:first-child {
@@ -194,9 +194,15 @@ a.current-page {
   padding-right: 45px;
 }
 
+.reasons-item p {
+  margin-top: 19px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .reasons-item-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 
   font-size: 21px;
   line-height: 26px;
@@ -214,24 +220,19 @@ a.current-page {
   width: 66.66%;
   margin: 0;
   padding: 0;
-
-
 }
 
 .features {
   display: flex;
   margin: 0;
   padding: 0;
-
-
-
 }
 
 .features-item {
   width: 33.33%;
   margin: 0;
   padding-top: 60px;
-  padding-bottom: 87px;
+  padding-bottom: 83px;
   padding-left: 50px;
   padding-right: 50px;
 
@@ -240,8 +241,10 @@ a.current-page {
   align-items: center;
 
   text-align: center;
+ }
 
-
+ .features-item:last-child {
+  padding-top: 57px;
  }
 
  .features-item * {
@@ -249,11 +252,18 @@ a.current-page {
  }
 
  .features-item img {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+ }
+
+
+
+ .features-item p {
+  font-size: 14px;
+  line-height: 21px;
  }
 
 .features-title {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   font-size: 21px;
   line-height: 21px;
@@ -290,15 +300,15 @@ a.current-page {
 
   text-align: center;
 
-  padding-top: 50px;
-  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-bottom: 60px;
   padding-left: 60px;
   padding-right: 60px;
 }
 
 .reasons-without-image-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
 
@@ -308,6 +318,9 @@ a.current-page {
 
 .reasons-without-image p {
   margin-bottom: 0;
+  margin-top: 19px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 
@@ -321,8 +334,8 @@ a.current-page {
 
 .description-form {
   margin: 0 auto;
-  margin-top: 57px;
-  margin-bottom: 52px;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
 
 .search-title {
@@ -334,6 +347,9 @@ a.current-page {
 .search-hotels p {
   text-align: center;
   color: #333333;
+
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .form-search {
@@ -348,8 +364,8 @@ a.current-page {
 .button-title-search {
   width: 100%;
   margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 33px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 
   background-color: #766357;
 
@@ -471,8 +487,8 @@ a.current-page {
   border: 0;
 
   padding-top: 17px;
-  padding-bottom: 22px;
-  margin-top: 25px;
+  padding-bottom: 15px;
+  margin-top: 23px;
 
   font-size: 21px;
   line-height: 26px;
@@ -616,11 +632,14 @@ transform: rotate(90deg);
 
 .map {
   position: relative;
+  height: 580px;
 }
 
 .map iframe {
   position: relative;
   z-index: 2;
+  height: 580px;
+
 }
 
 .map p {
@@ -630,7 +649,7 @@ transform: rotate(90deg);
   z-index: 1;
 
   margin:0;
-
+  height: 580px;
 }
 
 
@@ -1129,8 +1148,8 @@ transform: rotate(90deg);
   align-items: center;
 
   margin: 0;
-  padding-top: 36px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .main-footer.index-footer {
