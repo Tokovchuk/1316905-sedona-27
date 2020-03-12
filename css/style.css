@@ -677,8 +677,10 @@ transform: rotate(90deg);
   background-image: url(../img/filter-background.jpg);
   background-position: 0 -238px;
 
-  padding: 31px 72px;
-
+  padding-top: 27px; 
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 31px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -687,6 +689,7 @@ transform: rotate(90deg);
 
 .cost-form {
   margin-left: auto;
+  margin-right:;
 }
 
 .infrastructure,
@@ -700,7 +703,7 @@ transform: rotate(90deg);
 }
 
 .infrastructure {
-  margin-right: 115px;
+  margin-right: 118px;
 }
 
 .infrastructure legend,
@@ -708,7 +711,7 @@ transform: rotate(90deg);
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .infrastructure ul,
@@ -723,7 +726,7 @@ transform: rotate(90deg);
 
 .infrastructure li,
 .type-housing li {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   display: block;
 
 }
@@ -778,15 +781,18 @@ transform: rotate(90deg);
   background-image: url(../img/checkbox-on-2.svg);
 }
 
-.checkbox-form  label {
-
+.type-housing-item:last-child .checkbox,
+.infrastructure-item:last-child .checkbox {
+  margin-top: -3px;
 }
+
+
 
 
 /* Форма диапазонов цен*/
 
 .cost-form {
-  width: 330px;
+  width: 315px;
   color: white;
   text-transform:uppercase;
 
@@ -796,7 +802,7 @@ transform: rotate(90deg);
 }
 
 .cost-form-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -836,16 +842,22 @@ transform: rotate(90deg);
   cursor: pointer;
 }
 
-.cost-control .min-cost,
-.cost-control .max-cost {
+.cost-control .min-cost {
   width: 90px;
   padding-left: 65px;
 }
 
-.cost-control input {
+.cost-control .max-cost {
+  width: 90px;
+  padding-left: 76px;
+}
+
+.input-cost-min,
+.input-cost-max {
   width: 50px;
   height: 100%;
   margin: 0;
+  padding-left: 5px;
 
   color: inherit;
   font-size: 14px;
@@ -853,6 +865,15 @@ transform: rotate(90deg);
 
   background: none;
   border: none;
+}
+
+.input-cost-min {
+  padding-left: 0px;
+  margin-left: -4px;
+}
+
+.input-cost-max {
+  padding-left: 5px;
 }
 
 
@@ -898,8 +919,8 @@ transform: rotate(90deg);
 
 .show-cost {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 84px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 21px;
@@ -938,7 +959,11 @@ transform: rotate(90deg);
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 72px;
+  padding-top: 18px;
+  padding-right: 72px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+
 
   border-bottom: 1px solid #f2f2f2;
 }
@@ -948,6 +973,8 @@ transform: rotate(90deg);
   font-weight: bold;
 
   margin-right: 49px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .results-sorting {
@@ -1007,6 +1034,9 @@ transform: rotate(90deg);
 .sorting-btn-up {
   border: 0;
   background-color: transparent;
+  padding-right: 0;
+  padding-left: 8px;
+
 }
 
 .active {
@@ -1029,7 +1059,10 @@ transform: rotate(90deg);
   display: flex;
   justify-content: space-between;
 
-  padding: 30px 72px;
+  padding-top: 29px; 
+  padding-right: 72px;
+  padding-bottom: 30px;
+  padding-left: 72px;
 
   border-bottom: 1px solid #f2f2f2;
 
@@ -1060,6 +1093,7 @@ transform: rotate(90deg);
   margin-top: -4px;
 
   font-size: 21px;
+  line-height: 26px;
 
 }
 
@@ -1085,6 +1119,14 @@ transform: rotate(90deg);
   margin-right: 6px;
 }
 
+.column span {
+  font-size: 14px;
+  line-height: 21px;
+
+  margin-top: -4px;
+
+}
+
 
 .results-rating {
   display: flex;
@@ -1103,10 +1145,17 @@ transform: rotate(90deg);
   justify-content: flex-end;
 }
 
+.stars li {
+  padding-left: 6px;
+  line-height: 0;
+}
+
 
 
 .rating {
-  padding: 5px 13px 6px 16px;
+  align-self: flex-end;
+  padding-left: 17px;
+  padding-right: 15px;
   background-color: #f2f2f2;
   color: #666666;
 }
@@ -1115,7 +1164,7 @@ transform: rotate(90deg);
   background-color: #81b3d2;
   text-align: center;
   padding-left:16px;
-  padding-right: 16px;
+  padding-right: 18px;
   height: 27px;
 
   color: white;
@@ -1134,7 +1183,7 @@ transform: rotate(90deg);
   background-color: #766357;
   text-align: center;
   padding-left:16px;
-  padding-right: 16px;
+  padding-right: 18px;
   height: 27px;
 
   color: white;

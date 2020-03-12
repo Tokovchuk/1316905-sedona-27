@@ -32,20 +32,20 @@
               <fieldset class="checkbox-form infrastructure">
                 <legend>Инфраструктура:</legend>
                 <ul>
-                  <li class="infrstructure-item">
+                  <li class="infrastructure-item">
                     <label class="check-label">Бассейн
                       <input type="checkbox" name="infrasrtucrure-pool" class="check-input" checked>
                       <span class="checkbox"></span>
                     </label>
 
                   </li>
-                  <li class="infrstructure-item">
+                  <li class="infrastructure-item">
                     <label class="check-label">Парковка
                       <input type="checkbox" name="infrastructure-parking" class="check-input">
                       <span class="checkbox"></span>
                     </label>
                   </li>
-                  <li class="infrstructure-item">
+                  <li class="infrastructure-item">
                     <label class="check-label">Wi-Fi
                       <input type="checkbox" name="infrastructure-wi-fi" class="check-input">
                       <span class="checkbox"></span>
@@ -77,13 +77,13 @@
                 </ul>
               </fieldset>
               <fieldset class="cost-form">
-                <legend class="cost-form-title">Стоимость в сутки(р):</legend>
+                <legend class="cost-form-title">Стоимость в сутки (р):</legend>
 
                 <div class="cost-control">
                   <label class="min-cost">от</label>
-                  <input type="number" name="cost-min" min="0" value="0">
+                  <input type="number" name="cost-min" min="0" value="0" class="input-cost-min">
                   <label for="max" class="max-cost">до</label>
-                  <input type="number" name="cost-max" id="max" value="3000">
+                  <input type="number" name="cost-max" id="max" value="3000" class="input-cost-max">
                 </div>
 
                 <div class="range-control">
@@ -117,12 +117,12 @@
             <div class="sorting-btn">
               <button type="button" class="sorting-btn-down">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path class="" fill="#cacaca" d="M5.5 10L0 0h11"/>
+                  <path class="active" fill="#cacaca" d="M5.5 0L0 10h11z"/>
                 </svg>
               </button>
               <button type="button" class="sorting-btn-up">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path class="active" fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                  <path class="" fill="#cacaca" d="M5.5 10L0 0h11"/>
                 </svg>
               </button>
             </div>
@@ -178,7 +178,7 @@
                   <li><img src="img/star.svg" width="18" height="17" alt=""></li>
                   <li><img src="img/star.svg" width="18" height="17" alt=""></li>
                 </ul>
-                <span class="rating">Ретинг 8,9</span>
+                <span class="rating">Рейтинг 8,9</span>
               </div>
             </li>
             <li class="results-search-item">
