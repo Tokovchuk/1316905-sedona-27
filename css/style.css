@@ -314,8 +314,8 @@ a.current-page {
 .reasons-without-image-title {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
 
   font-size: 21px;
   line-height: 21px;
@@ -909,6 +909,10 @@ transform: rotate(90deg);
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
 .range-toggle-min {
   left: 0;
 }
@@ -1203,7 +1207,7 @@ transform: rotate(90deg);
 
 .main-footer {
   display: flex;
-  align-items: center;
+  
 
   margin: 0;
   padding-top: 33px;
@@ -1229,8 +1233,12 @@ transform: rotate(90deg);
   height: 100%;
 
   margin: 0px;
-  padding-left: 132px;
+ 
+
+  padding-left: 124px;
 }
+
+
 
 .contacts a:hover {
   color: #81b3d2;
@@ -1239,6 +1247,8 @@ transform: rotate(90deg);
 .contacts a:active {
  opacity: 0.3;
 }
+
+
 
 .social {
   width: 33.33%;
