@@ -133,6 +133,7 @@ a.current-page {
   width: 100%;
   min-width: 1200px;
   height: 507px;
+  background-color: #dae8f1;
   background-image: url(../img/intro-welcome.svg),
     url(../img/intro-mask.svg),
     url(../img/background-photo.jpg);
@@ -410,7 +411,10 @@ a.current-page {
   background-color: white;
 
   z-index: 3;
+}
 
+.form-hide {
+  display: none;
 }
 
 .form-item {
@@ -608,6 +612,9 @@ transform: rotate(90deg);
 .calendar {
   position: absolute;
   right: 9px;
+  top: 9px;
+
+  padding: 0;
 
   width: 21px;
   height: 22px;
@@ -628,11 +635,7 @@ transform: rotate(90deg);
   fill: #81b3d2;
 }
 
-.calendar svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 /* Карта */
 
@@ -675,6 +678,7 @@ transform: rotate(90deg);
 /* Фильтры поиска готиниц*/
 
 .form-filter {
+  background-color: #4879a2;
   background-image: url(../img/filter-background.jpg);
   background-position: 0 -238px;
 
@@ -693,20 +697,16 @@ transform: rotate(90deg);
   margin-right:;
 }
 
-.checkbox-form {
-  width: 137px;
-}
 
 .infrastructure,
 .type-housing {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   color: white;
   border: 0;
-
-  min-width: 137px;
 }
 
 .infrastructure {
@@ -842,6 +842,7 @@ transform: rotate(90deg);
 
 .cost-control label {
   display: inline-block;
+  vertical-align: baseline;
 
   font-size: 14px;
   line-height: 21px;
