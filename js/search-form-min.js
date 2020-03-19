@@ -1,0 +1,1 @@
+var open=document.querySelector(".button-title-search"),form=document.querySelector(".form-without-title");open.addEventListener("click",function(e){e.preventDefault(),form.classList.toggle("form-hide")});
