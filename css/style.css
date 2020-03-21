@@ -313,7 +313,7 @@ a.current-page {
 
 
 .search-hotel {
-  position: relative;
+ z-index: 4;
 }
 
 .description-form {
@@ -336,6 +336,7 @@ a.current-page {
 }
 
 .form-search {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -355,6 +356,7 @@ a.current-page {
   text-transform: uppercase;
   border: 0;
   cursor: pointer;
+  z-index: 4;
 }
 
 .button-title-search:hover {
@@ -368,6 +370,8 @@ a.current-page {
 
 .form-without-title {
   position: absolute;
+  left: 0;
+  top: 86px;
   width: 568px;
   display: flex;
   flex-wrap: wrap;
@@ -1189,3 +1193,46 @@ a.current-page {
 }
 
 
+/* Анимация формы*/
+
+
+@keyframes close {
+  to {
+    left: -1500px;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.close-form {
+  animation-name: close;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.error-form {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+ 
